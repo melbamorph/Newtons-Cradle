@@ -4,9 +4,20 @@
   <meta charset="UTF-8" />
   <title>Newton's Cradle</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 </head>
 <body>
-  <h1>Newton's Cradle</h1>
+  <div id="controls">
+    <select id="scenarioSelect">
+      <option value="basic">Basic</option>
+      <option value="double">Double Swing</option>
+      <option value="triple">Triple Swing</option>
+    </select>
+    <button id="playButton">Play</button>
+    <button id="resetButton">Reset</button>
+  </div>
+  <div id="scene"></div>
+  <audio id="collisionSound" src="collision.mp3" preload="auto" hidden></audio>
   <script src="script.js"></script>
 </body>
 </html>
