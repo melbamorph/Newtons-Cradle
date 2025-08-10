@@ -1,31 +1,40 @@
-# Newtons Cradle
+# Newton's Cradle
 
-This project is a **Newton's Cradle** interactive simulation built with HTML5, CSS, and JavaScript (using the Matter.js physics engine). The simulation features realistic physics with nearly elastic collisions, audible *click* sounds when balls collide, and a control panel to adjust the initial conditions.
-
-## Demo
-
-Open the `index.html` file in a web browser to run the Newton's Cradle simulation. You can also host these files on a web server or upload them to GitHub Pages for an online demo. The project is self-contained with no external build tools required.
+An interactive **Newton's Cradle** simulation originally coded with the assistance of OpenAI GPT-5, implemented in HTML, CSS, and JavaScript. This browser-based version captures the feel of the classic desk toy with realistic physics and  sound effects, though not fully realistic, still providing audible feedback.
 
 ## Features
 
-- **Realistic Physics:** Uses Matter.js to simulate pendulums and collisions, demonstrating conservation of momentum and energy.
-- **Crisp Collision Sound:** Each time balls collide, a short *click* sound is played for a realistic effect.
-- **Interactive Control Panel:** Adjust the scenario using the dropdown and control buttons:
-  - Select how many balls to pull back on the left and/or right side (e.g., one ball, two balls, etc.).
-  - Start the simulation with the *Play* button.
-  - Reset the simulation to its resting state with the *Reset* button.
-- **Mouse Interaction:** You can also drag and release individual balls with the mouse to experiment with custom motions.
+* Realistic momentum and energy transfer between balls.
+* Start, stop, resume, reset, adjust gravity, damping, and restitution.
+* Mute/unmute and volume adjustment.
+* Runs in any modern browser without extra dependencies.
 
-## How to Run
+## Controls
 
-1. **Open Locally:** Simply double-click `index.html` (or open it in your browser). Ensure all files (`index.html`, `style.css`, `script.js`) are in the same directory. No internet connection is required since the project uses local resources (the Matter.js library is loaded via CDN when online, but a local copy can be used if needed).
-2. **GitHub Pages:** Upload the entire project folder to a GitHub repository and enable GitHub Pages in the repository settings. You can then access the simulation via the GitHub Pages URL.
+* **Start** – Click any ball to begin motion. You can also move your mouse over the strings while they're in motion to alter the swing.
+* **Stop** – Halts all movement immediately.
+* **Resume** – Continues motion from its paused state without resetting positions.
+* **Reset** – Returns all balls to their resting position.
+* **Gravity/Damping/Restitution** – Sliders to fine-tune physics settings.
+* **Normalize** – Restores ball motion to match the exact pattern from the original reference clip used in development, including its timing, swing rhythm, and energy transfer.
+* **Mute/Volume** – Adjust or disable sound playback.
 
-No additional installation or build steps are necessary.
+## How to Run Locally
 
-## Files
+1. Clone the repository:
 
-- **index.html:** Main HTML file that sets up the page structure, includes the control panel and canvas, and links the CSS/JS.
-- **style.css:** Contains styling for the page layout and controls.
-- **script.js:** Contains the physics simulation code and logic for the interactive controls (using Matter.js).
- - **assets/collision.wav:** Sound file played when balls collide. Place your `collision.wav` in this folder.
+   ```bash
+   git clone https://github.com/melbamorph/Newtons-Cradle.git
+   ```
+2. Open `newtons_cradle_v_8.html` in your browser.
+
+## Live Demo
+
+Experience the simulation here:
+[https://melbamorph.github.io/Newtons-Cradle/](https://melbamorph.github.io/Newtons-Cradle/)
+
+## Notes
+
+* Clicking or hovering affects motion in real time.
+* **Normalize** is especially useful if the cradle’s motion becomes irregular and you want to restore the original smooth, realistic pattern.
+* The sound is tuned to be low, deep, and soothing for a true desk-toy feel.
