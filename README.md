@@ -28,4 +28,4 @@ No additional installation or build steps are necessary.
 - **index.html:** Main HTML file that sets up the page structure, includes the control panel and canvas, and links the CSS/JS.
 - **style.css:** Contains styling for the page layout and controls.
 - **script.js:** Contains the physics simulation code and logic for the interactive controls (using Matter.js).
- - **assets/collision.mp3:** Sound file played when balls collide. Place your `collision.mp3` in this folder.
+ - **assets/collision.wav:** Sound file played when balls collide. Place your `collision.wav` in this folder.
