@@ -37,4 +37,4 @@ Experience the simulation here:
 
 * Clicking or hovering affects motion in real time.
 * **Normalize** is especially useful if the cradle’s motion becomes irregular and you want to restore the original smooth, realistic pattern.
-* The sound is tuned to be low, deep, and soothing for a true desk-toy feel.
+* The current sound is computer-generated and serves as a placeholder; it is not fully realistic. This may be explored in a future branch, with the possibility of integrating a high-quality recorded sound for a more authentic Newton's Cradle click.
